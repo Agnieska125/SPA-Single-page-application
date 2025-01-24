@@ -1,0 +1,53 @@
+.header-bg {
+    min-height: 60px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: inherit;
+}
+
+.header-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links a {
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-links a:hover {
+    text-shadow: 2px 2px 2px var(--dark-green);
+    color: var(--dark-green);
+}
+
+
+.shopcart {
+    padding-left: 25px;
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+
+.shopcart::before {
+    content: "";
+    height: 46px;
+    width: 1px;
+    background-color: var(--gray);
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.shopcart img {
+    margin-right: 5px;
+
+}
