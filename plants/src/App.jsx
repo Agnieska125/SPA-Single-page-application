@@ -1,14 +1,17 @@
-import './App.css';
+import './app.css';
 import Header from './Components/Header';
+import Hero from './Components/Hero';
+import SectionCategories from './Components/SectionCategories';
 import TopLine from './Components/TopLine';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <TopLine />
-        <Header />
-      </header>
+    <div className="app">
+      <TopLine />
+      <Header />
+      <Hero />
+      <SectionCategories />
     </div>
   );
 }

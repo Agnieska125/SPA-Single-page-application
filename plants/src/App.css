@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+
 /* .poppins-light {
   font-family: "Poppins", serif;
   font-weight: 300;
