@@ -1,6 +1,7 @@
 import './app.css';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
+import SectionAllProducts from './Components/SectionAllProduct';
 import SectionBest from './Components/SectionBets';
 import SectionCategories from './Components/SectionCategories';
 import TopLine from './Components/TopLine';
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <SectionCategories />
       <SectionBest />
+      <SectionAllProducts />
     </div>
   );
 }
