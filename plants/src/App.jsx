@@ -16,6 +16,7 @@ function App() {
       <SectionCategories />
       <SectionBest />
       <SectionAllProducts />
+
     </div>
   );
 }

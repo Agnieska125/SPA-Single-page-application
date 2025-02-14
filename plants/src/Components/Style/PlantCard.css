@@ -12,7 +12,7 @@
 
 .img-box {
     position: relative;
-
+    text-align: center;
 }
 
 .discount-block {
@@ -22,7 +22,43 @@
     background-position: center;
     width: 64px;
     height: 64px;
+    background-repeat: no-repeat;
     top: 0;
     right: 0;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-text {
+    color: rgba(0, 0, 0, 1);
+    margin: 16px 0;
+
+}
+
+.plant-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.plant-price,
+.discounted-price {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.plant-img {
+    width: auto;
+    max-height: 219px;
+    border-radius: 8px;
+}
+
+.red-price {
+    font-size: 16px;
+    color: var(--red);
+    text-decoration-line: line-through;
+    padding-left: 10px;
 }

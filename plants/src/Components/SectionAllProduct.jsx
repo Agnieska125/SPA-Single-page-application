@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Style/SectionAllProduct.css'
 import SectionHot from './SectionHot';
+import SectionDeals from './SectionDeals';
 
 
 export default function SectionAllProduct() {
@@ -18,7 +19,7 @@ export default function SectionAllProduct() {
                     let imagePath;
 
                     try {
-                        imagePath = await import(`../Images/plantsData/${product.fileName}`);
+                        imagePath = await import(`../Images/plantsData/${product.image}`);
                     }
                     catch (error) {
                         imagePath = await import(`../Images/plantsData/empty.svg`);
@@ -40,6 +41,7 @@ export default function SectionAllProduct() {
     return (
         <>
             <SectionHot allProducts={allProducts} />
+            <SectionDeals allProducts={allProducts} />
         </>
     )
 }

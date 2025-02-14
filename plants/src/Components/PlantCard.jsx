@@ -18,7 +18,7 @@ export default function PlantCard({ imageSrc, title, price, discount, showDiscou
                     )}
                     <img className='plant-img' src={imageSrc} alt={title} />
                 </div>
-                <div>
+                <div className='card-text'>
                     <h3 className='plant-title'>{title}</h3>
                     {showDiscount && discount > 0 ? (
                         <>

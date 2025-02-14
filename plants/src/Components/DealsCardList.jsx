@@ -1,20 +1,21 @@
 import PlantCard from "./PlantCard"
-import './Style/HotCardList.css'
+import './Style/DealsCardList.css'
 
-export default function HotCardList({ allProducts, rating }) {
+export default function DealsCardList({ allProducts }) {
 
-    const filteredProducts = allProducts.filter(product => product.rating === rating)
+    const sortedProducts = allProducts.sort((a, b) => b.discount - a.discount);
+    const topDiscounted = sortedProducts.slice(0, 4);
 
     return (
         <div className="hotCard-list">
             {
-                filteredProducts.map((card) => (
+                topDiscounted.map((card) => (
                     <PlantCard
                         key={card.id}
                         imageSrc={card.imageSrc}
                         title={card.title}
                         price={card.price}
-                        showDiscount={false}
+                        showDiscount={true}
                         discount={card.discount}
                     />
                 ))
