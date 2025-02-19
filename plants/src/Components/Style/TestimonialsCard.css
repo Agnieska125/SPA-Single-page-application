@@ -1,0 +1,44 @@
+.testimonials-card {
+    background-color: white;
+    padding: 32px 30px 28px 30px;
+    max-width: 340px;
+    width: 100%;
+    box-shadow: 0px 4px 24px rgba(139, 167, 178, 0.16);
+    border-radius: 6px;
+}
+
+.star {
+    font-size: 24px;
+    color: lightgray;
+    letter-spacing: 5px;
+}
+
+.star.full {
+    color: rgba(86, 178, 128, 1);
+
+}
+
+.star.half {
+    color: rgba(86, 178, 128, 1);
+    background: linear-gradient(to right, rgba(86, 178, 128, 1) 50%, lightgray 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.test-card-text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.test-client-text {
+    font-size: 22px;
+    line-height: 29px;
+    margin: 20px 0 6px 0;
+}
+
+.test-cient-name {
+    font-size: 18px;
+    line-height: 27px;
+    color: #7C8087;
+    font-weight: 400;
+}
