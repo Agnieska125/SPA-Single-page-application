@@ -2,7 +2,7 @@ import DealsCardList from './DealsCardList';
 import './Style/SectionDeals.css'
 import Title from "./Title";
 
-export default function SectionHot({ allProducts }) {
+export default function SectionDeals({ allProducts }) {
     return (
         <div className='deals-bg'>
             <div className="wrapper hot-section">
