@@ -1,15 +1,13 @@
-import DealsCardList from './DealsCardList';
-import './Style/SectionDeals.css'
 import Title from "./Title";
+import './Style/SectionDeals.css';
+import DealsCardList from "./DealsCardList";
+
 
 export default function SectionDeals({ allProducts }) {
     return (
-        <div className='deals-bg'>
-            <div className="wrapper hot-section">
-                <Title text1='Ferntastic ' text2='Deals' showLink={true} />
-                <DealsCardList allProducts={allProducts} />
-            </div>
+        <div className="wrapper deals-section">
+            <Title text1='Ferntastic' text2='Deals' showLink={false} />
+            <DealsCardList allProducts={allProducts} />
         </div>
-
-    )
+    );
 }

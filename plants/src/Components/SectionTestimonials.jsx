@@ -1,4 +1,4 @@
-import './Style/SectionTestimonials.css'
+import './Style/SectionTestimonials.css';
 import { useEffect, useState } from 'react';
 import TestimonialsList from './TestimonialsList';
 
@@ -15,12 +15,11 @@ export default function SectionTestimonials() {
 
                 const allTestimonialsWithImages = await Promise.all(data.map(async (testimonial) => {
                     let imagePath;
-
                     try {
-                        imagePath = await import(`../Images/clients/${testimonial.img}`);
+                        imagePath = await import(`../img/clients/${testimonial.img}`);
                     }
                     catch (error) {
-                        imagePath = await import(`../Images/clients/clear.jpg`);
+                        imagePath = await import(`../img/clients/clear.jpg`);
                     }
 
                     return {
@@ -38,8 +37,10 @@ export default function SectionTestimonials() {
     }, []);
 
 
+
+
     return (
-        <div className='light-bg'>
+        <div className="light-bg">
             <div className="wrapper testimonials-section">
                 <h2 className='test-title'>Testimonials</h2>
                 <p className='test-text'>Plant parents love us</p>
@@ -47,5 +48,5 @@ export default function SectionTestimonials() {
             </div>
         </div>
 
-    )
+    );
 }

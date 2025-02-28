@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import Category from './Category'
-import './Style/CategoriesList.css'
+import { useEffect, useState } from 'react';
+import './Style/CategoriesList.css';
+import Category from './Category';
 
 export default function CategoriesList() {
 
@@ -15,12 +15,13 @@ export default function CategoriesList() {
 
                 const categoriesWithImages = await Promise.all(data.map(async (category) => {
                     const imagePath = await
-                        import(`../Images/category/${category.fileName}`);
+                        import(`../img/category/${category.fileName}`);
                     return {
                         ...category,
                         imageSrc: imagePath.default,
                     };
                 }));
+                console.log(categoriesWithImages);
                 setCategories(categoriesWithImages);
             } catch (error) {
                 console.error('Klaida gaunant kategorijas', error);
@@ -29,10 +30,11 @@ export default function CategoriesList() {
         fetchCategories();
     }, []);
 
+
     return (
         <div className='categories-list'>
             {
-                categories.map(category => (
+                categories.map((category) => (
                     <Category
                         key={category.id}
                         imageSrc={category.imageSrc}
@@ -40,6 +42,7 @@ export default function CategoriesList() {
                     />
                 ))
             }
+
         </div>
     )
 }

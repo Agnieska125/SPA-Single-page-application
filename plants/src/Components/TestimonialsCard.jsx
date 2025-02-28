@@ -1,6 +1,6 @@
-import './Style/TestimonialsCard.css'
+import './Style/TestimonialsCard.css';
 
-export default function TestimonialsCard({ imageSrc, name, text, rating }) {
+export default function TestimonialsCard({ name, imageSrc, text, rating }) {
 
     const renderStars = (rating) => {
         const stars = [];
@@ -14,8 +14,9 @@ export default function TestimonialsCard({ imageSrc, name, text, rating }) {
                 stars.push(<span key={i} className='star'>★</span>)
             }
         }
-        return stars
+        return stars;
     }
+
 
     return (
         <div className='testimonials-card'>
@@ -27,9 +28,8 @@ export default function TestimonialsCard({ imageSrc, name, text, rating }) {
 
             <div className='test-card-text'>
                 <p className='test-client-text'>"{text}"</p>
-                <h3 className='test-cient-name'>{name}</h3>
+                <h3 className='test-client-name'>{name}</h3>
             </div>
-
         </div>
     )
 }

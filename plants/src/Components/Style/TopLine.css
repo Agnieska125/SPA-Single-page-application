@@ -1,32 +1,32 @@
 .bg {
-    background-color: var(--dark-green);
+    width: 100%;
+    background-color: var(--green);
     min-height: 45px;
+    color: var(--white);
 }
 
-.banner-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
+.top-line {
     min-height: inherit;
-}
-
-.banner-links {
-    position: absolute;
-    right: 50px;
     display: flex;
-    gap: 20px;
-
+    align-items: center;
+    justify-content: right;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
 }
 
-.currency-link {
-    color: white;
+.ad {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.support {
+    margin-left: 40px;
+    color: var(--white);
+}
+
+.currency {
     font-weight: 400;
-}
-
-.support-link {
-    color: white;
+    cursor: pointer;
 }

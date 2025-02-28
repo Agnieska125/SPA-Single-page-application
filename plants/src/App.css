@@ -1,3 +1,13 @@
+:root {
+  --green: #50806B;
+  --bggreen: #e8edde;
+  --lgreen: #5bc08A;
+  --black: #000;
+  --red: #d11f1f;
+  --textgrey: #7C8087;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,29 +15,15 @@
   text-decoration: none;
 }
 
-:root {
-  --dark-green: #50806B;
-  --light-green: #E8EDDE;
-  --red: #D11F1F;
-  --gray: #7C8087;
-}
 
 .wrapper {
   max-width: 1260px;
+  min-height: inherit;
   margin: 0 auto;
   padding: 0 20px;
   font-family: "Poppins", serif;
   font-style: normal;
 }
-
-h1 {
-  font-size: 80px;
-  line-height: 80px;
-  color: rgba(0, 0, 0, 1);
-  font-weight: 600;
-}
-
-
 
 /* .poppins-light {
   font-family: "Poppins", serif;

@@ -1,5 +1,5 @@
+import './Style/DealsCardList.css';
 import PlantCard from "./PlantCard"
-import './Style/DealsCardList.css'
 
 export default function DealsCardList({ allProducts }) {
 
@@ -8,19 +8,18 @@ export default function DealsCardList({ allProducts }) {
 
     return (
         <div className="hotCard-list">
-            {
-                topDiscounted.map((card) => (
-                    <PlantCard
-                        key={card.id}
-                        imageSrc={card.imageSrc}
-                        title={card.title}
-                        price={card.price}
-                        showDiscount={true}
-                        discount={card.discount}
-                    />
-                ))
+            {topDiscounted.map((card) => (
+                <PlantCard
+                    key={card.id}
+                    plantid={card.id}
+                    imageSrc={card.imageSrc}
+                    title={card.title}
+                    price={card.price}
+                    showDiscount={true}
+                    discount={card.discount}
+                />
+            ))
             }
         </div>
     )
-
 }

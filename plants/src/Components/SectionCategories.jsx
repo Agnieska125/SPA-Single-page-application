@@ -1,12 +1,14 @@
 import CategoriesList from "./CategoriesList";
 import Title from "./Title";
-import './Style/SectionCategories.css'
+import './Style/SectionCategories.css';
 
 export default function SectionCategories() {
     return (
+
         <div className="wrapper categories">
-            <Title text1='Shop ' text2='by Category' showLink={false} />
+            <Title text1='Shop' text2='by Category' showLink={false} />
             <CategoriesList />
         </div>
-    )
+
+    );
 }

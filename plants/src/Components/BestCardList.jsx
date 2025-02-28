@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
-import BestCard from './BestCard'
-import './Style/BestCardList.css'
+import { useEffect, useState } from 'react';
+import './Style/BestCardList.css';
+import BestCard from './BestCard';
 
 export default function BestCardList() {
 
-    const [bestCards, setBestCards] = useState([]);
+    const [bestcards, setBestCards] = useState([]);
 
     useEffect(() => {
         const fetchBestCards = async () => {
@@ -15,12 +15,13 @@ export default function BestCardList() {
 
                 const bestCardsWithImages = await Promise.all(data.map(async (bestCard) => {
                     const imagePath = await
-                        import(`../Images/bestSelling/${bestCard.fileName}`);
+                        import(`../img/bestSelling/${bestCard.fileName}`);
                     return {
                         ...bestCard,
                         imageSrc: imagePath.default,
                     };
                 }));
+                console.log(bestCardsWithImages);
                 setBestCards(bestCardsWithImages);
             } catch (error) {
                 console.error('Klaida gaunant kategorijas', error);
@@ -29,10 +30,11 @@ export default function BestCardList() {
         fetchBestCards();
     }, []);
 
+
     return (
         <div className='best-cards-list'>
             {
-                bestCards.map(card => (
+                bestcards.map((card) => (
                     <BestCard
                         key={card.id}
                         imageSrc={card.imageSrc}

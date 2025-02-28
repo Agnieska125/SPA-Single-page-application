@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
-import './Style/SectionAllProduct.css'
+import { useEffect, useState } from 'react';
 import SectionHot from './SectionHot';
 import SectionDeals from './SectionDeals';
 
 
-export default function SectionAllProduct() {
+
+export default function SectionAllProducts() {
 
     const [allProducts, setAllProducts] = useState([]);
 
@@ -17,12 +17,11 @@ export default function SectionAllProduct() {
 
                 const allProductsWithImages = await Promise.all(data.map(async (product) => {
                     let imagePath;
-
                     try {
-                        imagePath = await import(`../Images/plantsData/${product.image}`);
+                        imagePath = await import(`../img/plantsData/${product.image}`);
                     }
                     catch (error) {
-                        imagePath = await import(`../Images/plantsData/empty.svg`);
+                        imagePath = await import(`../img/plantsData/empty.svg`);
                     }
 
                     return {
@@ -30,6 +29,7 @@ export default function SectionAllProduct() {
                         imageSrc: imagePath.default,
                     };
                 }));
+                console.log(allProductsWithImages);
                 setAllProducts(allProductsWithImages);
             } catch (error) {
                 console.error('Klaida gaunant visas prekes', error);
@@ -37,6 +37,7 @@ export default function SectionAllProduct() {
         };
         fetchAllProducts();
     }, []);
+
 
     return (
         <>

@@ -1,25 +1,26 @@
+import './Style/HotCardList.css';
 import PlantCard from "./PlantCard"
-import './Style/HotCardList.css'
 
 export default function HotCardList({ allProducts, rating }) {
 
-    const filteredProducts = allProducts.filter(product => product.rating === rating)
+    const filtredProducts = allProducts.filter(product => product.rating === rating)
+
+    console.log(filtredProducts);
 
     return (
         <div className="hotCard-list">
-            {
-                filteredProducts.map((card) => (
-                    <PlantCard
-                        key={card.id}
-                        imageSrc={card.imageSrc}
-                        title={card.title}
-                        price={card.price}
-                        showDiscount={false}
-                        discount={card.discount}
-                    />
-                ))
+            {filtredProducts.map((card) => (
+                <PlantCard
+                    key={card.id}
+                    plantid={card.id}
+                    imageSrc={card.imageSrc}
+                    title={card.title}
+                    price={card.price}
+                    showDiscount={false}
+                    discount={card.discount}
+                />
+            ))
             }
         </div>
     )
-
 }

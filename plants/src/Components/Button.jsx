@@ -1,6 +1,6 @@
 import './Style/Button.css';
 
-export default function Button({ className = '', children = 'shop', href = '#', ...props }) {
+export default function Buttons({ className = '', children = 'shop', href = '#', ...props }) {
     return (
         <a
             className={`button ${className}`}

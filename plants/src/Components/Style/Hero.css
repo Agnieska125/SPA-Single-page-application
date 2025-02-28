@@ -1,72 +1,60 @@
 .hero-bg {
+    background-color: var(--bggreen);
     min-height: 710px;
-    background-color: #E8EDDE;
 }
 
-.wrapper {
+.hero {
     position: relative;
+    min-height: inherit;
+    background: url('../../img/plant-right.svg');
+    /* background-size: cover; */
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-.right-bg {
+.hero::before {
+    content: '';
     position: absolute;
-    right: 0;
-    height: 100%;
+    width: 428px;
+    height: 464px;
+    bottom: -20px;
+    left: -20px;
+    background: url('../../img/plant-left.svg');
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
 }
 
-.left-bg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-}
-
-.hero-container {
+.hero-mid {
+    min-height: inherit;
     max-width: 594px;
     background: rgba(80, 128, 107, 0.2);
-    backdrop-filter: blur(40px);
-    min-height: 710px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 60px;
+    backdrop-filter: blur(20px);
     margin: 0 auto;
-    padding: 0 20px;
-    font-family: "Poppins", serif;
-    font-style: normal;
-    z-index: 1;
-}
-
-.hero-text-container {
     display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    text-align: center;
-    row-gap: 40px;
+    flex-direction: column;
 }
 
-.hero-text-container p {
-    color: black;
+.dark-line {
+    width: 100%;
+    min-height: 35px;
+    background-color: var(--green);
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0.03em;
+}
+
+.slogan {
+    max-width: 430px;
+    font-weight: 400;
     font-size: 22px;
     line-height: 33px;
-    font-weight: 300;
-    max-width: 430px;
-
-}
-
-.green-line-hero {
-    background: rgba(80, 128, 107, 1);
-    min-height: 39px;
-}
-
-.hero-btn {
-    padding: 24px 56px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    font-size: 22px;
-    line-height: 22px;
-    font-weight: 600;
-    border: none;
+    margin: 30px auto 38px auto;
 }

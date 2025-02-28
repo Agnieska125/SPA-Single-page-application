@@ -1,9 +1,7 @@
-
-import FooterBaner from './FooterBaner'
-import SecondMenu from './SecondMenu'
-import SocialMenu from './SocialMenu'
-import './Style/SectionFooter.css'
-
+import FooterBaner from './FooterBaner';
+import SecondMenu from './SecondMenu';
+import './Style/SectionFooter.css';
+import SocialMenu from './SocialMenu';
 
 export default function SectionFooter() {
     return (
@@ -12,6 +10,5 @@ export default function SectionFooter() {
             <SocialMenu />
             <FooterBaner />
         </section>
-
-    )
+    );
 }

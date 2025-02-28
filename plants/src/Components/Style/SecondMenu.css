@@ -4,10 +4,11 @@
 }
 
 .second-menu-links a {
-    color: black;
-    font-weight: bold;
+    color: var(--black);
+    font-weight: 600;
     font-size: 16px;
     margin: 0 15px;
+    padding: 8px 12px;
 }
 
 .second-menu-links a:hover {
