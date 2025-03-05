@@ -17,6 +17,10 @@
 
 }
 
+.plant-card-link {
+    color: var(--black);
+}
+
 .discount-block {
     position: absolute;
     color: #FFFFFF;

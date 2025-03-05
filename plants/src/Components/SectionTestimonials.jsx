@@ -19,7 +19,7 @@ export default function SectionTestimonials() {
                         imagePath = await import(`../img/clients/${testimonial.img}`);
                     }
                     catch (error) {
-                        imagePath = await import(`../img/clients/clear.jpg`);
+                        imagePath = await import('../img/clients/clear.jpg');
                     }
 
                     return {
