@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[858],{4858:(s,e,p)=>{s.exports=p.p+"static/media/orchid.245dd8d354c4a615e027.jpg"}}]);

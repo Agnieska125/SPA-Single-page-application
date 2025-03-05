@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[270],{3270:(s,a,e)=>{s.exports=e.p+"static/media/syngonium.28b41310b19f02ac7cbb.svg"}}]);

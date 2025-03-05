@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[593],{8593:(p,s,e)=>{p.exports=e.p+"static/media/pineapple.0778f9c0d6283a878520.svg"}}]);

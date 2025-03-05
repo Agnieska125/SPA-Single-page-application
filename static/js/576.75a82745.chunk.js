@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[576],{9576:(e,a,s)=>{e.exports=s.p+"static/media/dracaena.d1d5ea7740be7831d0fe.jpg"}}]);

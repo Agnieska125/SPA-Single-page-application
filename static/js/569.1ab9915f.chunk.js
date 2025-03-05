@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[569],{5569:(s,e,a)=>{s.exports=a.p+"static/media/neon.80b9fdeb4ca544932379.svg"}}]);

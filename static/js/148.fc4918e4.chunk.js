@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[148],{5148:(s,e,a)=>{s.exports=a.p+"static/media/indoor.d66add5d13f10b11be7d.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[492],{7492:(s,a,e)=>{s.exports=e.p+"static/media/hoya.2b9f3047c2753698252c.svg"}}]);

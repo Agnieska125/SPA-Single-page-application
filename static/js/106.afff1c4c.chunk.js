@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[106],{4106:(e,s,p)=>{e.exports=p.p+"static/media/evergreen.c335b96b3506e10b176b.svg"}}]);

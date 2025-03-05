@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[846],{5846:(s,e,a)=>{s.exports=a.p+"static/media/jewel.c2dd4c442746b0fa0f1c.svg"}}]);

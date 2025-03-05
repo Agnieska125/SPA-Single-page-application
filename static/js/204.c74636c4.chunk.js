@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[204],{8204:(s,e,t)=>{s.exports=t.p+"static/media/succulents.57518c13488453954a57.svg"}}]);

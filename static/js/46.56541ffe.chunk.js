@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[46],{8046:(e,s,a)=>{e.exports=a.p+"static/media/marble.56e10a7f27bee41c1d1a.svg"}}]);

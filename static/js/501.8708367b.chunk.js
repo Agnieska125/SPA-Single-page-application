@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[501],{4501:(e,a,s)=>{e.exports=s.p+"static/media/aloe_vera.6b6f7be21db0bcbac711.jpg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[966],{2966:(e,s,a)=>{e.exports=a.p+"static/media/creepers.cc53e5e4afa82a0394fd.svg"}}]);

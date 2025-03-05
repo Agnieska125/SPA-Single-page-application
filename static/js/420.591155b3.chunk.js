@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[420],{6420:(s,e,t)=>{s.exports=t.p+"static/media/gifts.0db2807dd0d2e08b266e.svg"}}]);

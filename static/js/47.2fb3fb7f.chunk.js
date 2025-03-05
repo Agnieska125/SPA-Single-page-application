@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplants=self.webpackChunkplants||[]).push([[47],{47:(s,a,c)=>{s.exports=c.p+"static/media/cacti.ad4d7fc73fad1d2ec592.svg"}}]);
